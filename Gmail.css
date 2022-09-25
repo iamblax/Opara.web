@@ -1,0 +1,283 @@
+:root{
+    --mount-meadow:#cd45ff ;
+    --white-smoke: #fefefe;
+    --night-rider:  #343434 ;
+    /* #343434 night rider init */
+    --black: #0f100f;
+    --transition: all 1s ease-in-out;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+button{
+    cursor: pointer;
+    outline: 0;
+    background: transparent ;
+}
+
+.container-index{
+    width: 100%;
+    /* height: 100vh; */
+     margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 30%;
+    max-width: 600px;
+    border-radius: 8px;
+   
+    
+
+}   
+
+form h3{
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family:'Hind Siliguri', sans-serif ;
+}
+
+form input, form textarea{
+   border: 0;
+   margin: 10px 0;
+   padding: 10px;
+   outline: none;
+   background: #f5f5f5;
+   font-size: 17px;
+   font-family:'Hind Siliguri', sans-serif ;
+   border-radius: 15px;
+
+}
+form button{
+    padding: 15px;
+    background: var(--mount-meadow);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 150px;
+    margin: 20px auto 0;
+    
+} 
+
+
+@media screen and (max-width: 600px) {
+    .form h3, form, form textarea, form button, input[type=text],  input[type=submit],input[type=email]{
+      width: 100%;
+      margin-top: 0;
+      /* position: relative; */
+      margin-bottom: 10px;
+    
+
+      
+    }
+     
+  }
+
+*{
+    font-family: 'Hind Siliguri', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    /* color: var(--black); */
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: i.5;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0.6rem 0;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 0.5rem 0;
+}
+
+body{
+    background: #1d1b1b;
+    color: var(--white-smoke);
+    -webkit-tap-highlight-color: transparent;
+ 
+    
+}
+
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), 
+    url(images/pexels-jessica-lewis-creative-593322.jpg);
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--mount-meadow);
+    z-index: 9;
+   
+}
+.brand-and-toggler{
+    font-size: 1.5rem;
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-div{
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+.navbar-brand{
+    font-weight: 500;
+    color: var( --white-smoke);
+}
+
+.navbar-brand span{
+    color: var(--mount-meadow);
+}
+.navbar-toggler{
+    border: none;
+    color: var(--white-smoke);
+    font-size: 1.5rem;
+}
+
+.navbar-nav{
+    margin: 0.2rem 0 0.6rem 0;
+}
+.nav-item{
+    padding: 0.6rem 0;
+}
+
+.nav-link{
+    text-transform: uppercase ;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    font-weight: 200%;
+    opacity: 0.65;
+    transition: var(--transition);
+    
+}
+.nav-link:hover{
+    color: var(--white-smoke)!important;
+}
+
+.navbar-collapse{
+    display: none;
+}
+
+
+@media screen and (min-width: 992px){
+    .navbar{
+        background: transparent;
+        margin-top: 1.4rem;
+        
+        
+    } 
+    /* transparent navbar */
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-brand{
+      color: var(--mount-meadow);
+      font-size: 2rem;
+    }
+    .navbar-toggler{
+      display: none;
+    } 
+    .navbar-collapse{
+      display: block!important;
+    }
+    .navbar-nav{
+      display: flex;
+      margin: 0;
+    }
+    .nav-item{
+      margin-left: 1.8rem;
+    }
+    .nav-link{
+      color: var(--mount-meadow);
+      list-style-type: none;
+    }
+    .hero-div h1{
+      font-size: 3.8rem;
+    } 
+    .btn-trans{
+        display: inline-block;
+        margin-right: 0.8rem;
+
+    }
+    .cng-navbar{
+        --webkit-box-shadow: 0 2px 5px rgba(207,205,207, 0.3);
+        --moz-box-shadow: 0 2px 5px rgba(207,205,207, 0.3);
+        box-shadow: 0 2px 5px rgba(207,205,207, 0.3);
+        margin-top: 0;
+        background: rgb(43, 42, 42);
+        box-shadow: 0 2px 3px rgba(1, 3, 14, 0.277);
+    }
+    .cng-navbar .navbar-brand{
+        color: var(--mount-meadow);
+
+    }
+    .cng-navbar .nav-link{
+        color: var(--mount-meadow);
+
+    }
+     
+    
+}
+
+
+
+
+
